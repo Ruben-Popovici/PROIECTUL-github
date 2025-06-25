@@ -44,3 +44,5 @@ shape = SubResource("CircleShape2D_0xm2m")
 [node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(0, -1)
 texture = ExtResource("2_0xm2m")
+
+[node name="thing-this" type="Node2D" parent="CharacterBody2D"]
