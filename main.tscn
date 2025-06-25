@@ -1,5 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://kj8sr415tpba"]
 
+[ext_resource type="Script" uid="uid://kqrhqpqvs3pg" path="res://character_body_2d.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://beck6odhorg53" path="res://icon.svg" id="2_0xm2m"]
 
 [sub_resource type="GDScript" id="GDScript_ig7tw"]
@@ -36,7 +37,7 @@ func _physics_process(delta: float) -> void:
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(461, -4)
-script = SubResource("GDScript_ig7tw")
+script = ExtResource("1_0xm2m") # <- You choose whether to use this external script OR the embedded one (SubResource)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CircleShape2D_0xm2m")
